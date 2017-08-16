@@ -14,7 +14,8 @@ $(document).ready(function(){
 			$('#phone').removeClass('animate');
 			$('#tablet').removeClass('animate');			
 		}
-
 	});
-
+	$('#icon').click(function(){
+		$('.right').slideToggle('slow');
+	});
 });
