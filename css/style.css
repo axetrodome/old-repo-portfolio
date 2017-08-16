@@ -162,19 +162,24 @@ height:400px;
 		right:0;
 		position:absolute;
 	}
+	li a{
+		text-align:left;
+	}
 	.right {
 		float:none;
-		text-align:left;
 		display:none;
-		position:relative;
-		background-color:rgb(0,0,0,0.5);
 	}
 	.left{
 		display:block;
 		float:none;
 		text-align:left;
 	}
-
+	.left.padding{
+		height:50px;
+	}
+	.right.opacity{
+		background-color:rgba(0,0,0,0.5);
+	}
 }
 .caption-body{
 	padding:15px;
