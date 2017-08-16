@@ -19,5 +19,3 @@ $(document).ready(function(){
 		$('.right').slideToggle('slow');
 	});
 });
-https://github.com/axetrodome/axetrodome.github.io.git
-https://github.com/axetrodome/portfolio.git
