@@ -10,28 +10,33 @@
 	<title>My portfolio</title>
 </head>
 <body>
-<div class="container">	
+<div class="container" id="home">	
 	<nav id="topnav">
 		<ul>
-			<li class="left"><a href="#name">Axel Mhar</a></li>
+			<li class="left active"><a href="#">Axel Mhar</a></li>
 			<li class="icon"><a href="javascript:void(0);" id="icon">&#9776;</a></li>
-			<li class="right"><a href="#skills">About me</a></li>
-			<li class="right"><a href="#skills">Skills</a></li>
-			<li class="right"><a class="active" href="#home">Home</a></li>
+			<li class="right"><a href="#about" class="scroll">About me</a></li>
+			<li class="right"><a href="#skills" class="scroll">Skills</a></li>
+			<li class="right"><a href="#home" class="scroll">Home</a></li>
 		</ul>
 	</nav>
 	<h1 class="middle"><span class="caption"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Under Development</span></h1>
 </div>
-<div class="container12" id="scroll">
-	<img src="images/Phone.png" id="phone">
-	<img src="images/Monitor.png" id="monitor">
-	<img src="images/tablet.png" id="tablet">
+<div id="skills">
+	<div class="container12" id="scroll">
+		<img src="images/Phone.png" id="phone">
+		<img src="images/Monitor.png" id="monitor">
+		<img src="images/tablet.png" id="tablet">
+	</div>
+	<div class="caption-container">
+		<h1 class="caption-header">Web Designing</h1>
+		<p class="caption-body">
+			Mollit nostrud commodo aliquip culpa nulla cillum excepteur non dolore laborum culpa velit deserunt officia laborum tempor fugiat excepteur cillum in elit ullamco eu magna consectetur incididunt irure aliqua ut esse eu.
+		</p>
+	</div>
 </div>
-<div class="caption-container">
-	<h1 class="caption-header">Web Designing</h1>
-	<p class="caption-body">
-		Mollit nostrud commodo aliquip culpa nulla cillum excepteur non dolore laborum culpa velit deserunt officia laborum tempor fugiat excepteur cillum in elit ullamco eu magna consectetur incididunt irure aliqua ut esse eu.
-	</p>
+<div class="about" id="about">
+	
 </div>
 </body>
 <script src="js/jquery-3.2.1.min.js"></script>
