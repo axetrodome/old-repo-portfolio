@@ -37,7 +37,6 @@ $(document).ready(function(){
 				$(this).parent().siblings().removeClass('active');
 			}
 		});
-
 	});
 	$('#icon').click(function(){
 		$('.right').slideToggle('slow');
