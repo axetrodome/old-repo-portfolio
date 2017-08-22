@@ -10,9 +10,8 @@ $(document).ready(function(){
 		},1000);
 	});
 
-	$(window).scroll(function(event){
+	$(window).scroll(function(){
 		var scrollBarLocation = $(this).scrollTop();
-
 		if(scrollBarLocation > 50){
 			$('nav').addClass('shrink');
 			$('.left').addClass('padding');

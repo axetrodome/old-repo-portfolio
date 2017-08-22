@@ -5,34 +5,52 @@
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/1140.css">
-<link rel="icon" href="images/tab-icon.png">
+<link rel="icon" href="images/logo.png">
 <head>
 	<title>My portfolio</title>
 </head>
 <body>
-<div class="container" id="home">	
+<div class="home" id="home">
 	<nav id="topnav">
 		<ul class="list">
-			<li class="left active"><a href="#">Axel Mhar</a></li>
-			<li class="icon"><a href="javascript:void(0);" id="icon">&#9776;</a></li>
-			<li class="right"><a href="#about" class="scroll">About me</a></li>
-			<li class="right"><a href="#skills" class="scroll">Skills</a></li>
-			<li class="right"><a href="#home" class="scroll">Home</a></li>
+			<li class="left"><a href="#">Axel Mhar</a></li>
+			<li class="icon"><a href="#" id="icon">&#9776;</a></li>
+			<li class="right"><a href="#projects" class="scroll">Projects</a></li>
+			<li class="right"><a href="#about" class="scroll">About</a></li>
+			<li class="right active"><a href="#home" class="scroll">Home</a></li>
 		</ul>
 	</nav>
-<!-- 	<h1 class="middle"><span class="caption"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Under Development</span></h1> -->
+	<div class="background-image">
+		<img src="images/Untitled-2-1.png">
+	</div>	
+	<!-- <h1 class="middle"><span class="caption"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Hey I'm Axel </span></h1> -->
+</div>
+<div id="about" class="about">
+	<div class="container12" id="scroll">
+		<img src="images/Phone.png" id="phone">
+		<img src="images/Monitor.png" id="monitor">
+		<img src="images/tablet.png" id="tablet">
+	</div>
+	<div class="caption-container">
+		<h1 class="caption-header">Web Designing</h1>
+		<p class="caption-body">
+			Mollit nostrud commodo aliquip culpa nulla cillum excepteur non dolore laborum culpa velit deserunt officia laborum tempor fugiat excepteur cillum in elit ullamco eu magna consectetur incididunt irure aliqua ut esse eu.
+		</p>
+	</div>
+</div>
+<div class="projects" id="projects">
 	<ul id="categories">
 		<li class="pusher"></li>
 		<li>
 			<div class="img-container">
-				<img src="http://wallpapercave.com/wp/GRDCsEG.jpg" alt="css logo">
+				<img src="images/logo.png" alt="css logo">
 				<h1>Some header</h1>
 				<p>Some sample text about the article this hexagon leads to</p>
 			</div>
 		</li>
 		<li>
 			<div class="img-container">
-				<img src="http://wallpapercave.com/wp/0CJI2IU.jpg" alt="html logo">
+				<img src="images/Untitled-2-1.png" alt="html logo">
 				<h1>Some header</h1>
 				<p>Some sample text about the article this hexagon leads to</p>
 			</div>
@@ -59,22 +77,7 @@
 			</div>
 		</li>
 	</ul>
-</div>
-<div id="skills">
-	<div class="container12" id="scroll">
-		<img src="images/Phone.png" id="phone">
-		<img src="images/Monitor.png" id="monitor">
-		<img src="images/tablet.png" id="tablet">
-	</div>
-	<div class="caption-container">
-		<h1 class="caption-header">Web Designing</h1>
-		<p class="caption-body">
-			Mollit nostrud commodo aliquip culpa nulla cillum excepteur non dolore laborum culpa velit deserunt officia laborum tempor fugiat excepteur cillum in elit ullamco eu magna consectetur incididunt irure aliqua ut esse eu.
-		</p>
-	</div>
-</div>
-<div class="about" id="about">
-	<div class="box">
+<!-- 	<div class="box">
 		<img src="images/html.png" class="" id="">
 	</div>
 	<div class="box">
@@ -88,7 +91,7 @@
 	</div>
 	<div class="box"> 
 		<img src="images/php.png" class="" id="">
-	</div>
+	</div> -->
 </div>
 </body>
 <script src="js/jquery-3.2.1.min.js"></script>
