@@ -1,7 +1,10 @@
 $(document).ready(function(){
 
 	var scrollLink = $('.scroll');
-
+	var somelink = $('.link');
+	somelink.click(function(e){
+		e.preventDefault();
+	})
 	scrollLink.click(function(e){
 		e.preventDefault();
 
@@ -16,10 +19,13 @@ $(document).ready(function(){
 			$('nav').addClass('shrink');
 			$('.left').addClass('padding');
 			$('.right').addClass('opacity');
+			$('.return-top').fadeIn();
+
 		}else{
 			$('nav').removeClass('shrink');
 			$('.left').removeClass('padding');
 			$('.right').removeClass('opacity');
+			$('.return-top').fadeOut();
 
 		}
 		if(scrollBarLocation >= 400){
@@ -29,6 +35,8 @@ $(document).ready(function(){
 			$('#phone').removeClass('animate');
 			$('#tablet').removeClass('animate');			
 		}
+
+
 		scrollLink.each(function(){
 			var sectionOffset = $(this.hash).offset().top;
 
@@ -37,6 +45,12 @@ $(document).ready(function(){
 				$(this).parent().siblings().removeClass('active');
 			}
 		});
+	});
+	$('.return-top').click(function(){
+		$('body,html').animate({
+			scrollTop:0
+
+		},1000);
 	});
 	$('#icon').click(function(){
 		$('.right').slideToggle('slow');
