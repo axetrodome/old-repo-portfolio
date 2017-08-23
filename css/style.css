@@ -5,6 +5,7 @@
 	box-sizing:border-box;
 }
 html,body{
+	height:100%;
 }
 .list{
 	list-style-type:none;
@@ -42,17 +43,18 @@ nav.shrink{
 .icon{
 	display:none;
 }
-.background-image img{
-	background-attachment:fixed;
-	background-repeat:no-repeat;
-	background-size: cover;
-	background-position:center;
-	position:relative;
-	height:100vh;
-	width:100%;
+.bgimg-1{
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
-.home{
-	height:100vh;
+.bgimg-1 {
+  background-image: url('images/fonts.jpg');
+  min-height: 100%;
 }
 .right{
 	float:right;left:15px;
